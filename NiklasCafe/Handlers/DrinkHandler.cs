@@ -24,6 +24,14 @@ public class DrinkHandler
         _sugarService.SugarAdded += SugarServiceOnSugarAdded;
     }
 
+    public async Task PrepareDrink()
+    {
+        Console.WriteLine("Making drink");
+        await _coffeeService.PrepareCoffee();
+        await _sugarService.AddSugar();
+        await _milkService.AddMilk();
+    }
+
     private void SugarServiceOnSugarAdded(Ingredient sugar)
     {
         Drink.Ingredients.Add(sugar);
