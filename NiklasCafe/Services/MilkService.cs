@@ -10,7 +10,7 @@ public class MilkService
     {
         Console.WriteLine("Pouring milk");
         Thread.Sleep(2000);
-        var milk = new Ingredient() { Name = "Milk" };
+        var milk = new Ingredient() {Name = "Milk"};
         MilkAdded.Invoke(milk);
     }
 }

@@ -10,7 +10,7 @@ public class SugarService
     {
         Console.WriteLine("Adding sugar cubes.");
         Thread.Sleep(1000);
-        var sugar = new Ingredient() { Name = "Sugar" };
+        var sugar = new Ingredient() {Name = "Sugar"};
         SugarAdded.Invoke(sugar);
     }
 }
