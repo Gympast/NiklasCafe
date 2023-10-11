@@ -11,3 +11,5 @@ var drinkHandler = new DrinkHandler(coffeeService, milkService, sugarService);
 coffeeService.PrepareCoffee();
 sugarService.AddSugar();
 milkService.AddMilk();
+
+Console.WriteLine(drinkHandler.Drink.ToString());
